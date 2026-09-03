@@ -214,7 +214,7 @@ const bringTask=(toIndex,cardid,sourceid,taskid,taskindex)=>{
                                                      swapTask={swapTask}
                                                      bringTask={bringTask}
                                                    />}/>
-            <Route path="/*" element={<Notfound/>}/>                                           
+            <Route path="/*" element={<Notfound/>}/>                                         
         </Routes>   
     </>       
   );

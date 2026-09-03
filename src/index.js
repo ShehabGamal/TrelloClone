@@ -7,7 +7,7 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { TouchBackend } from 'react-dnd-touch-backend';
 import { MultiBackend,TouchTransition } from 'dnd-multi-backend';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 
 const HTML5toTouch = {
   backends: [
@@ -27,11 +27,11 @@ const HTML5toTouch = {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
     <DndProvider backend={MultiBackend} options={HTML5toTouch}>
     <App />
     </DndProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
